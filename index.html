@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body and background styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, p {
+            margin: 0;
+        }
+
+        /* Perspective for the 3D effect */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            perspective: 1000px;
+            padding: 20px;
+        }
+
+        /* 3D box for each section */
+        section {
+            position: relative;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease; /* Reduced sensitivity */
+        }
+
+        section:hover {
+            transform: rotateX(5deg) rotateY(5deg) scale(1.03); /* Reduced rotation for a subtler effect */
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #000000; /* Light orange background */
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        /* Navigation Styling */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #000000; /* Light orange color */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #000000; /* Lighter orange for hover effect */
+        }
+
+        /* Section headers */
+        h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2rem;
+            color: #000000; /* Light orange color */
+        }
+
+        /* List styling */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        .three-d-text {
+            font-family: 'Georgia', serif;
+            font-size: 2rem;
+            color: #000000; /* Light orange color */
+            text-shadow: 1px 1px 2px #888, -1px -1px 2px #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #010101; /* Light orange footer background */
+            color: #fff;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SHUBHAM MARUTI PAWAR</h1>
+        <p>Web Penetration Tester | Cybersecurity Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#tools">Tools</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Shubh, a dedicated web penetration tester with a strong commitment to enhancing the security of web applications. My journey in cybersecurity has equipped me with the skills to uncover vulnerabilities and implement effective solutions. I am driven by a passion for making the digital world safer for everyone.</p>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <p>I possess extensive experience in identifying and exploiting security vulnerabilities in web applications. My work involves conducting detailed penetration tests, assessing system security, and delivering comprehensive reports with actionable solutions.</p>
+            <p>Core expertise includes:</p>
+            <ul>
+                <li>＞In-depth web application security testing and analysis</li>
+                <li>＞Conducting API security assessments to identify flaws</li>
+                <li>＞Extensive bug bounty hunting across reputable platforms</li>
+                <li>＞Authoring detailed vulnerability assessment reports</li>
+            </ul>
+            <p>In my career, I have collaborated with organizations to strengthen their security posture and address critical vulnerabilities proactively.</p>
+        </section>
+
+        <section id="tools" class="tools">
+            <h2>Tools I Use</h2>
+            <ul>
+                <li>＞Burp Suite</li>
+                <li>＞OWASP ZAP</li>
+                <li>＞Fuff</li>
+                <li>＞Metasploit</li>
+                <li>＞Nmap</li>
+                <li>＞SQLmap</li>
+            </ul>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>＞Reported a valid P4 bug on NASA's website, demonstrating my capability to detect and report high-value vulnerabilities.</li>
+                <li>＞Uncovered a rate-limiting vulnerability on Mypandit.com, highlighting a critical area of improvement in their security mechanisms.</li>
+                <li>＞Identified input validation issues on CyberGhost's signup process, contributing to improved user data security.</li>
+                <li>＞Discovered a directory listing vulnerability on a NASA subdomain, ensuring their sensitive files remain secure.</li>
+                <li>＞Successfully reported a vulnerability on QuickReel's API, demonstrating proficiency in API security assessments.</li>
+                <li>＞Reported input validation vulnerabilities across multiple platforms, ensuring their security frameworks were fortified.</li>
+            </ul>
+        </section>
+
+        <section id="blog">
+            <h2 class="three-d-text">Blog</h2>
+            <p>Read my blog on how I discovered a directory listing vulnerability on a NASA subdomain: <a href="https://medium.com/@shubhammpawar7438/how-i-discovered-a-directory-listing-vulnerability-on-a-nasa-subdomain-979883e47874" target="_blank">Visit Blog</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Shubh's Portfolio | <a href="mailto:shubh@example.com">Contact Me</a></p>
+    </footer>
+</body>
+</html>
