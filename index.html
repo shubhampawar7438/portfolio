@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Pawar | Cybersecurity Professional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Terminal Intro -->
+    <div id="terminal-intro" class="terminal">
+        <div class="terminal-content">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                </div>
+                <div class="terminal-title">portfolio.sh</div>
+            </div>
+            <div class="terminal-body">
+                <div class="typing-text"></div>
+                <div class="tagline"></div>
+                <div class="cursor"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (initially hidden) -->
+    <div id="main-content" class="hidden">
+        <!-- Navigation -->
+        <nav class="nav-container">
+            <div class="logo">SP</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#recognition">Recognition</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/shubhampawar7438" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shubhammarutipawar/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@shubhammpawar7438" target="_blank" class="social-icon" aria-label="Medium"><i class="fab fa-medium"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1>Shubham Pawar</h1>
+                        <h3>Cybersecurity Professional | Bug Bounty Hunter</h3>
+                        <p class="bio">"Web Penetration Tester and Cybersecurity Enthusiast with experience in identifying web application vulnerabilities. 
+                            Passionate about securing real-world systems through deep reconnaissance and manual testing. Reported valid bugs to 
+                            platforms like NASA, Flipkart and Gov of India. "</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">Security Research</span>
+                            <span class="tech-item">Vulnerability Assessment</span>
+                            <span class="tech-item">Penetration Testing</span>
+                            <span class="tech-item">Bug Bounty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>C</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>Bash</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Burp Suite</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bug"></i>
+                                <span>OWASP ZAP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Nmap</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-search"></i>
+                                <span>Nikto</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-plug"></i>
+                                <span>Netcat</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>Metasploit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recognition Section -->
+        <section id="recognition" class="section">
+            <div class="container">
+                <h2 class="section-title">Hall of Fame</h2>
+                <div class="recognition-grid">
+                    <div class="recognition-card" data-org="NASA" onclick="openModal('nasa-modal')">
+                        <div class="card-content">
+                            <i class="fas fa-award"></i>
+                            <h3>NASA</h3>
+                            <p>Special Mention</p>
+                        </div>
+                    </div>
+                    <div class="recognition-card" data-org="Flipkart" onclick="openModal('flipkart-modal')">
+                        <div class="card-content">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Flipkart</h3>
+                            <p>Security Recognition</p>
+                        </div>
+                    </div>
+                    <div class="recognition-card" data-org="Government" onclick="openModal('govt-modal')">
+                        <div class="card-content">
+                            <i class="fas fa-certificate"></i>
+                            <h3>Government of India</h3>
+                            <p>Security Excellence</p>
+                        </div>
+                    </div>
+                    <div class="recognition-card" data-org="Tata" onclick="openModal('tata-modal')">
+                        <div class="card-content">
+                            <i class="fas fa-medal"></i>
+                            <h3>Tata Motors</h3>
+                            <p>Security Achievement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievement Modals -->
+        <div id="nasa-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal('nasa-modal')">&times;</span>
+                <div class="modal-body">
+                    <h2>Security Achievement</h2>
+                    <p>Recognized for identifying critical security vulnerabilities in NASA's systems, contributing to enhanced security measures and protecting sensitive space mission data.</p>
+                    <div class="achievement-details">
+                        <span class="achievement-date">2024</span>
+                        <span class="achievement-type">Directory Listing</span>
+                    </div>
+                    <div class="appreciation-gallery">
+                        <h3>Appreciation Letter</h3>
+                        <div class="gallery-container">
+                            <div class="gallery-item" onclick="openImageModal('nasa-letter-1')">
+                                <img src="nasa.jpg" alt="NASA Appreciation Letter 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="flipkart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal('flipkart-modal')">&times;</span>
+                <div class="modal-body">
+                    <h2>Security Achievement</h2>
+                    <p>Acknowledged for discovering and responsibly reporting significant security vulnerabilities in Flipkart's e-commerce platform, helping protect millions of users' data.</p>
+                    <div class="achievement-details">
+                        <span class="achievement-date">2024</span>
+                        <span class="achievement-type">Unauthorized Account Creation</span>
+                    </div>
+                    <div class="appreciation-gallery">
+                        <h3>Appreciation Letter</h3>
+                        <div class="gallery-container">
+                            <div class="gallery-item" onclick="openImageModal('flipkart-letter-1')">
+                                <img src="flipkart.jpeg" alt="Flipkart Appreciation Letter 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="govt-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal('govt-modal')">&times;</span>
+                <div class="modal-body">
+                    <h2>Security Achievement</h2>
+                    <p>Honored for exceptional contributions to national cybersecurity initiatives and protecting critical government infrastructure through responsible vulnerability disclosure.</p>
+                    <div class="achievement-details">
+                        <span class="achievement-date">2024</span>
+                        <span class="achievement-type">Directory Listing</span>
+                    </div>
+                    <div class="appreciation-gallery">
+                        
+                        <div class="gallery-container">
+                            <div class="gallery-item" onclick="openImageModal('govt-letter-1')">
+                                <img src="gov.jpeg" alt="Government Appreciation Letter 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tata-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal('tata-modal')">&times;</span>
+                <div class="modal-body">
+                    <h2>Security Achievement</h2>
+                    <p>Recognized for identifying and reporting critical security vulnerabilities in Tata Motors' automotive systems.</p>
+                    <div class="achievement-details">
+                        <span class="achievement-date">2024</span>
+                        <span class="achievement-type">Automotive Security</span>
+                    </div>
+                    <div class="appreciation-gallery">
+                        <h3>Appreciation Letter</h3>
+                        <div class="gallery-container">
+                            <div class="gallery-item" onclick="openImageModal('tata-letter-1')">
+                                <img src="tata.jpeg" alt="Tata Motors Appreciation Letter 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Modal -->
+        <div id="image-modal" class="modal">
+            <div class="modal-content image-modal-content">
+                <span class="close-modal" onclick="closeImageModal()">&times;</span>
+                <div class="modal-body">
+                    <img id="modal-image" src="" alt="Appreciation Letter">
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects & Research</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Security Research</h3>
+                            <p>Advanced security research and vulnerability assessments</p>
+                            <div class="project-links">
+                                <a href="https://github.com/shubhampawar7438" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <a href="https://medium.com/@shubhammpawar7438" target="_blank" class="project-link">
+                                    <i class="fab fa-medium"></i> Read on Medium
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="https://github.com/shubhampawar7438" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shubhammarutipawar/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/@shubhammpawar7438" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                    </div>
+                    <p>&copy; 2024 Shubham Pawar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
