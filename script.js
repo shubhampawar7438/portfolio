@@ -32,18 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Type the access message
         await typeText(typingText, "> Accessing Shubham Pawar's Portfolio...");
         await new Promise(resolve => setTimeout(resolve, 800));
-
-        // Type the access granted message
-        await typeText(typingText, "\n> Access Granted");
-        await new Promise(resolve => setTimeout(resolve, 1000));
-
-        // Type the tagline with a different color
-        await typeText(tagline, "> Every bug tells a story. I listen.");
-        await new Promise(resolve => setTimeout(resolve, 1500));
-
-        // Add a final message
-        await typeText(typingText, "\n> Initializing portfolio...");
-        await new Promise(resolve => setTimeout(resolve, 1000));
         
         // Fade out terminal and show main content
         terminal.classList.add('fade-out');
